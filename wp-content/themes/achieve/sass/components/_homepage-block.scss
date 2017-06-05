@@ -1,0 +1,73 @@
+.homepage-block {
+  @include clearfix;
+  padding:20px;
+
+  &:not(:last-of-type) {
+    border-bottom:1px solid $light-light-blue;
+  }
+
+  p { margin:0; }
+
+  @include media($m-up) {
+    display:flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  @include media($l-up) {
+    padding:60px 80px;
+  }
+}
+
+.homepage-block__text-col {
+  @include font-size(16, 24);
+  text-align: center;
+
+  @include media(($m-up)) {
+    @include span-columns(7);
+    padding-left:50px;
+    text-align: left;
+  }
+}
+.homepage-block__image-col {
+  img {
+    max-width:220px;
+    margin:0 auto 30px;
+    display:block;
+
+    @include media($m-up) {
+      max-width: 100%;
+      margin:0;
+    }
+  }
+  @include media(($m-up)) {
+    @include span-columns(5);
+  }
+}
+.homepage-block__title {
+  @extend h2;
+  @include font-size(24, 28);
+
+  @include media($m-up) {
+    @include font-size(28, 32);
+  }
+}
+
+.homepage-block--switched {
+  @include media($m-up) {
+    .homepage-block__text-col {
+      @include shift(-13);
+    }
+    .homepage-block__image-col {
+      @include shift(7);
+    }
+  }
+}
+
+.homepage-block--light-light-blue {
+  background:linear-gradient(to bottom, $light-light-blue 40%, darken($light-light-blue, 10%)) $light-light-blue;
+}
+
+.homepage-block--light-light-grey {
+  background:linear-gradient(to bottom, $light-light-grey 40%, darken($light-light-grey, 10%)) $light-light-grey;
+}

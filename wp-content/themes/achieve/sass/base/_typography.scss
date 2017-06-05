@@ -1,0 +1,116 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size * 0.90;
+  line-height: $base-line-height * 0.90;
+
+  @include media($l-up) {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $base-spacing;
+  color:$dark-dark-blue;
+  text-transform: uppercase;
+  font-weight:400;
+}
+
+h1 {
+   @include font-size(28, 32);
+  font-weight:700;
+
+   @include media($l-up) {
+     letter-spacing: -1px;
+     @include font-size(36, 42);
+   }
+ }
+
+h2 {
+  @include font-size(28, 32);
+  font-weight: 400;
+
+  @include media($l-up) {
+    letter-spacing: -1px;
+    @include font-size(28, 38);
+  }
+}
+
+h3 {
+  color:$dark-dark-blue;
+  text-transform:uppercase;
+  @include font-size(24, 32);
+
+  @include media($l-up) {
+  }
+}
+
+h4 {
+  color:$dark-dark-blue;
+  text-transform: uppercase;
+  @include font-size(21, 28);
+}
+
+p {
+  margin: 0 0 $base-spacing;
+}
+
+a:link,
+a:visited {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+hr {
+  border:0;
+  width:80%;
+  height:1px;
+  background-color: $light-light-blue;
+  margin: $base-spacing * 1.5 auto;
+}
+
+ul, ol {
+  margin-left:0px;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+.footnote__reference,
+.footnote__text {
+  color:$dark-grey;
+  @include font-size(12px, 16px);
+}
+
+.footnote__text {
+  margin-bottom:$base-spacing * 0.5;
+}
+
+.footnote__reference {
+  vertical-align: super;
+  font-size: 75%;
+}

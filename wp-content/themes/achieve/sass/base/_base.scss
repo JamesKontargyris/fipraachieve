@@ -1,0 +1,23 @@
+* {
+  z-index: z('default');
+}
+.container {
+  @include outer-container();
+}
+
+html {
+  min-height:100%;
+}
+body {
+  min-height:100%;
+  background: url(img/footer_bg.jpg) bottom left repeat-x, url('img/page_bg.jpg') top left repeat-x #dceff4;
+}
+
+// Used to toggle elements
+.show {
+  display:block !important;
+}
+
+.hide {
+  display:none !important;
+}

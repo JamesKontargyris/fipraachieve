@@ -1,0 +1,66 @@
+.header {
+  @include lr-pad(10px);
+  background-color: white;
+  z-index: z('high');
+
+  &__inner {
+    @include outer-container();
+    @include tb-pad($vr);
+    height:100%;
+
+    @include media($l-up) {
+      @include tb-pad(($vr * 3));
+    }
+  }
+
+  &__nav {
+    position: fixed;
+    display:none;
+    top:0;
+    left:0;
+    @include size(100% 100%);
+    min-height:100%;
+    background-color: white;
+
+    @include media($m-up) {
+      position:relative;
+      @include span-columns(12, 'flex');
+      display:none;
+
+      //flex-direction: column;
+      //align-items: stretch;
+      //align-content: space-between;
+    }
+
+    @include media($l-up) {
+      @include span-columns(8, 'flex');
+    }
+  }
+}
+
+.site-title {
+  margin:30px auto 10px;
+  padding:0 20px;
+  max-width:220px;
+  -webkit-filter: drop-shadow( 0 2px 2px $dark-blue );
+  filter: drop-shadow( 0 2px 2px $dark-blue );
+
+  @include media($l-up) {
+    max-width:250px;
+    margin:50px auto 10px;
+  }
+}
+
+.site-strap-line {
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+  color:white;
+  margin-bottom: 40px;
+  padding:0 10px;
+  line-height:1.3;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+
+  @include media($l-up) {
+    letter-spacing: 2px;
+  }
+}

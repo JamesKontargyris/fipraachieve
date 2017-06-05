@@ -1,0 +1,8 @@
+.homepage-members {
+  @include clearfix;
+  padding:20px;
+
+  @include media($l-up) {
+    padding:60px 80px;
+  }
+}

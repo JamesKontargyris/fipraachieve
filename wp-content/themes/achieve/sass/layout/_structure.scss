@@ -1,0 +1,35 @@
+.site {
+}
+
+.site-branding {
+  max-width:880px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.site-content {
+  max-width: 880px;
+  margin:0 auto;
+  background-color: #ffffff;
+  padding:20px;
+
+  @include media($l-up) {
+    padding:30px 80px;
+  }
+
+  &.no-pad {
+    padding:0;
+  }
+}
+
+.page-banner {
+  margin:0 auto;
+  max-width:880px;
+  img {
+    display:block;
+  }
+}
+
+#primary {
+  margin-top:-24px;
+}
