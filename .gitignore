@@ -31,7 +31,6 @@
 wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
-!wp-content/themes/
 
 # ignore all mu-plugins, plugins, and themes
 # unless explicitly whitelisted at the end of this file
@@ -102,4 +101,4 @@ Thumbs.db
 
 # track these mu-plugins, plugins, and themes
 # add your own entries here
-!wp-content/themes/hivoutcomes/
+!wp-content/themes/achieve/
