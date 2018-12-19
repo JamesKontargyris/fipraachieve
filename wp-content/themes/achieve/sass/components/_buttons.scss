@@ -9,6 +9,7 @@
   }
 }
 
+.button--dark-blue,
 .button--dark-blue a {
   @extend .button;
   background:linear-gradient(to bottom, $dark-blue 40%, darken($dark-blue, 10%)) $dark-blue;
@@ -16,6 +17,7 @@
   border-bottom:2px solid darken($dark-blue, 15%);
 }
 
+.button--light-blue,
 .button--light-blue a {
   @extend .button;
   background:linear-gradient(to bottom, $light-blue 40%, darken($light-blue, 10%)) $dark-blue;

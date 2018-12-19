@@ -1,0 +1,21 @@
+.event {
+
+}
+
+.event__header {
+  border-bottom:1px solid $light-grey;
+}
+
+.event__date {
+  @extend h4;
+  color:$light-blue;
+  margin-bottom:$small-spacing;
+}
+
+.event-excerpt {
+  &:not(:last-of-type) {
+    padding-bottom:$base-spacing;
+    border-bottom:1px solid $light-grey;
+    margin-bottom:$base-spacing;
+  }
+}

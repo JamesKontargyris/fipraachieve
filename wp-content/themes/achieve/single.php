@@ -9,20 +9,29 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area single">
 		<main id="main" class="site-main" role="main">
 
 		<?php
 		while ( have_posts() ) : the_post();
 
+		if(get_post_type() == 'event') {
+
+			get_template_part( 'template-parts/content', 'event' );
+
+		} else {
+
 			get_template_part( 'template-parts/content', get_post_format() );
 
-			the_post_navigation();
+		}
+
+
+//			the_post_navigation();
 
 			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+//			if ( comments_open() || get_comments_number() ) :
+//				comments_template();
+//			endif;
 
 		endwhile; // End of the loop.
 		?>

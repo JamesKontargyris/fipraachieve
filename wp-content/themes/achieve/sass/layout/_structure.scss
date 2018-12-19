@@ -33,3 +33,8 @@
 #primary {
   margin-top:-24px;
 }
+
+#primary.single,
+#primary.archive {
+  margin-top:0;
+}
