@@ -10,19 +10,22 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-	</header><!-- .entry-header -->
+	<?php if ( ! is_home() && ! is_front_page() ) : ?>
+        <header class="entry-header">
+            <h1><?php the_title(); ?></h1>
+        </header><!-- .entry-header -->
+	<?php endif; ?>
 
-	<div class="entry-content">
+    <div class="entry-content">
 		<?php
-			the_content();
+		the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hivoutcomes' ),
-				'after'  => '</div>',
-			) );
+		//			wp_link_pages( array(
+		//				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hivoutcomes' ),
+		//				'after'  => '</div>',
+		//			) );
 		?>
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
     <footer class="entry-footer">
         <!--entry footer content-->

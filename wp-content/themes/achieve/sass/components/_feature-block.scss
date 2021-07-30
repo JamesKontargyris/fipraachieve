@@ -1,0 +1,64 @@
+.feature-block {
+  @include clearfix;
+  background: linear-gradient(to bottom, $light-light-blue 40%, darken($light-light-blue, 10%)) $light-light-blue;
+  padding: 3rem;
+  margin: 0 -2rem $base-spacing -2rem; // to allow for padding on .entry-content
+
+  @include media($l-up) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 8rem;
+    margin: 0 -4rem $base-spacing -4rem;
+  }
+}
+
+.feature-block__image {
+  max-width: 40rem;
+  margin: 0 auto;
+
+  img {
+    display: block;
+    margin: 0 auto $base-spacing;
+  }
+
+  @include media($l-up) {
+    flex: 1;
+    margin: 0 4rem 0 0;
+
+    img {
+      margin: 0;
+    }
+  }
+
+
+}
+
+.feature-block__text {
+  text-align: center;
+
+  @include media($l-up) {
+    text-align: left;
+    flex: 1.5;
+  }
+}
+
+.feature-block__text__title {
+  @extend h2;
+}
+
+.feature-block__text__description {
+  line-height: 1.5;
+}
+
+.feature-block--switched {
+  @include media($l-up) {
+    flex-direction: row-reverse;
+
+    .feature-block__image {
+      margin-right: 0;
+      margin-left: 4rem;
+    }
+
+  }
+}

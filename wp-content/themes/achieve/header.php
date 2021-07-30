@@ -74,4 +74,4 @@
         </div>
 	<?php endif; ?>
 
-	<div id="content" class="site-content <?php if(is_front_page()) : ?>no-pad<?php endif; ?>">
+	<div id="content" class="site-content">

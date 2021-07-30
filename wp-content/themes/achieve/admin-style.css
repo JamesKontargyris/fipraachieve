@@ -1,0 +1,83 @@
+/*
+Theme Name: ACHIEVE
+Author: James Kontargyris
+Author URI: http://jameskontargyris.co.uk/
+Description: ACHIEVE Wordpress template
+Version: 1.0
+Text Domain: achieve
+*/
+.wp-block { font-family: "Open Sans", sans-serif; }
+
+.wp-block-paragraph { color: #222222; font-family: "Open Sans", sans-serif; font-size: 16px; line-height: 32px; }
+
+.wp-block-button.is-style-outline a, .wp-block-button.is-style-outline .wp-block-button__link { background: transparent !important; background-color: transparent !important; border: 0.1rem solid #0a76be; color: #0a76be !important; }
+
+h1, h2, .feature-block__text__title, h3, h4, h5, h6 { font-family: "Oswald", sans-serif !important; font-size: 16px; line-height: 1.2; margin: 0 0 30px; color: #0a4d78; text-transform: uppercase; font-weight: 400; }
+
+h1 { letter-spacing: -1px; font-size: 36px; line-height: 42px; font-weight: 700; }
+
+h2, .feature-block__text__title { letter-spacing: -1px; font-size: 28px; line-height: 38px; font-weight: 700; }
+
+h3 { color: #0a4d78; text-transform: uppercase; font-size: 24px; line-height: 32px; }
+
+h4 { color: #0a4d78; text-transform: uppercase; font-size: 21px; line-height: 28px; }
+
+p { margin: 0 0 30px; }
+
+a:link, a:visited { color: #0a76be; text-decoration: none; transition: color 150ms ease; }
+
+a:link:active, a:link:focus, a:link:hover, a:visited:active, a:visited:focus, a:visited:hover { color: shade(#0a76be, 25%); }
+
+hr { border: 0; width: 80%; height: 1px; background-color: #dceff4; margin: 45px auto; }
+
+ul, ol { margin-left: 0px; }
+
+blockquote { font-style: italic; }
+
+img, picture { margin: 0; max-width: 100%; }
+
+.footnote__reference, .footnote__text { color: #5e5e5d; font-size: 12px; line-height: 16px; }
+
+.footnote__text { margin-bottom: 15px; }
+
+.footnote__reference { vertical-align: super; font-size: 75%; }
+
+.button, .button--dark-blue, .wp-block-button a, .wp-block-button .wp-block-button__link, .button--light-blue { display: inline-block; border-radius: 3px; padding: 5px 10px; transition: all 0.5s; margin-right: 5px; }
+
+.button:hover, .button--dark-blue:hover, .wp-block-button a:hover, .wp-block-button .wp-block-button__link:hover, .button--light-blue:hover { opacity: 0.7; }
+
+.button--dark-blue, .wp-block-button a, .wp-block-button .wp-block-button__link { background: linear-gradient(to bottom, #0a76be 40%, #07588e) #0a76be; color: white !important; border-bottom: 2px solid #064975; }
+
+.button--light-blue { background: linear-gradient(to bottom, #2bd2e8 40%, #16b5ca) #0a76be; color: white; border-bottom: 2px solid #13a0b3; }
+
+.feature-block { background: linear-gradient(to bottom, #dceff4 40%, #b5dde8) #dceff4; padding: 30px 20px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.feature-block::after { clear: both; content: ""; display: table; }
+
+.feature-block__image { -ms-flex: 1; flex: 1; margin-right: 40px; }
+
+.feature-block__text { -ms-flex: 1; flex: 1; }
+
+.feature-block__text__description { line-height: 1.5; }
+
+.feature-block--switched { -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+.feature-block--switched .feature-block__image { margin-right: 0; margin-left: 40px; }
+
+.members-gallery { margin-bottom: 30px; }
+
+.members-gallery__blocks { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; list-style: none; padding: 0; border: 0; }
+
+.members-gallery__member { -ms-flex-preferred-size: 25%; flex-basis: 25%; margin: 0 10px 20px; text-align: center; }
+
+.members-gallery__member__logo { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 180px; height: 180px; padding: 20px; border: 1px solid #cccccc; margin: 0 auto 10px; }
+
+.members-gallery__member__logo a:hover, .members-gallery__member__logo a:active, .members-gallery__member__logo a:focus { opacity: 0.6; }
+
+.member-gallery__member__name { font-size: 14px; line-height: 1.3; }
+
+.endnote { margin-bottom: 15px; font-size: 12px; line-height: 16px; color: #5e5e5d; }
+
+.endnote p { display: inline; }
+
+.endnote__reference { color: #2bd2e8; }

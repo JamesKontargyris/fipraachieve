@@ -1,0 +1,49 @@
+.members-gallery {
+  margin-bottom: $base-spacing;
+}
+
+.members-gallery__blocks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  border: 0;
+}
+
+.members-gallery__member {
+  flex-basis: 25%;
+  margin: 0 1rem 2rem;
+  text-align: center;
+}
+
+.members-gallery__member__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 14rem;
+  padding: 1rem;
+  border: 0.1rem solid $light-grey;
+  margin: 0 auto 1rem;
+
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+
+  @include media($m-up) {
+    width: 18rem;
+    height: 18rem;
+    padding: 2rem;
+  }
+}
+
+.member-gallery__member__name {
+  font-size: 1.4rem;
+  line-height: 1.3;
+}

@@ -1,0 +1,13 @@
+.endnote {
+  margin-bottom: $small-spacing;
+  @include font-size(12, 16);
+  color:$dark-grey;
+
+  p {
+    display: inline;
+  }
+}
+
+.endnote__reference {
+  color:$light-blue;
+}

@@ -8,13 +8,13 @@
 }
 
 .site-content {
-  max-width: 880px;
+  max-width: 88rem;
   margin:0 auto;
   background-color: #ffffff;
-  padding:20px;
+  padding:0 2rem 2rem;
 
   @include media($l-up) {
-    padding:30px 80px;
+    padding:0 4rem 4rem;
   }
 
   &.no-pad {
@@ -30,11 +30,29 @@
   }
 }
 
-#primary {
-  margin-top:-24px;
-}
-
 #primary.single,
 #primary.archive {
   margin-top:0;
+}
+
+.entry-header {
+  padding: $base-spacing 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, white 40%, $light-light-blue) $light-light-blue;
+  margin: 0 -2rem $base-spacing;
+
+  @include media($l-up) {
+    margin: 0 -4rem $base-spacing;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.entry-content {
+  margin:0 !important;
+
+  @include media($l-up) {
+  }
 }

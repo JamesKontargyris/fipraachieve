@@ -1,0 +1,55 @@
+// WordPress overrules
+.wp-block-embed {
+  margin: 0 auto $base-spacing;
+
+  .wp-block-embed__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    iframe {
+      max-height: 20rem;
+      background-color: black;
+
+      @include media($m-up) {
+        max-height: none;
+      }
+    }
+  }
+
+  figcaption {
+    text-align: center;
+  }
+
+  &.video-height-fix {
+
+    .wp-block-embed__wrapper {
+
+      iframe {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+  }
+}
+
+iframe.wp-embedded-content {
+}
+
+.wp-block-button {
+  a {
+    @extend .button--dark-blue;
+  }
+
+  &.is-style-outline {
+    a {
+      background: transparent;
+      border: 0.1rem solid $dark-blue;
+      color: $dark-blue !important;
+    }
+  }
+}
+
+.wp-block-separator {
+  border: 0;
+}

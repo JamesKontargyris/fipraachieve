@@ -7,7 +7,7 @@ Version: 1.0
 Text Domain: achieve
 */
 
-@charset 'utf-8';
+@charset "utf-8";
 
 /// Abstracts (utilities that do not output any CSS)
 @import
@@ -40,7 +40,8 @@ Text Domain: achieve
 'base/underscores',
 'base/base',
 'base/typography',
-'base/menus';
+'base/menus',
+'base/wordpress';
 
 /// Components (modules)
 @import
@@ -52,7 +53,10 @@ Text Domain: achieve
 'components/event',
 'components/homepage-block',
 'components/homepage-members',
-'components/gallery';
+'components/gallery',
+'components/feature-block',
+'components/endnote',
+'components/members-gallery';
 
 /// Page-specific stylesheets
 //@import
